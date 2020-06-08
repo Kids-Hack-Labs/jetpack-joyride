@@ -8,9 +8,7 @@ import sys, pygame
 _FPS = 30
 
 #Other imports go here
-from src.test_screen import TestScreen
-
-
+from src.game_screen import GameScreen
 
 class Game:
     class __Game:
@@ -30,7 +28,7 @@ class Game:
             
             pygame.display.set_mode(self.window_size)
             pygame.display.set_caption(self.caption)
-            Game.__Game.current_screen = TestScreen()
+            Game.__Game.current_screen = GameScreen()
 
             self.time_since_started = pygame.time.get_ticks()
             #assuming everything is okay
