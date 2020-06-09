@@ -6,6 +6,7 @@ from engine.screen import Screen
 from engine.game_object import GameObject
 from src.behaviours.sprite_renderer import SpriteRenderer
 from src.behaviours.animator import Animator
+from src.animation import Animation
 from src.behaviours.rigidbody import Rigidbody
 from src.behaviours.jetpack import Jetpack
 from src.behaviours.particle_system import ParticleSystem
@@ -34,6 +35,10 @@ class GameScreen(Screen):
         player.add_behaviour(renderer)
 
         animator = Animator()
+
+        run_animation = Animation("./assets/running/")
+        animator.animations.append(run_animation)
+
         player.add_behaviour(animator)
 
         rigidbody = Rigidbody()

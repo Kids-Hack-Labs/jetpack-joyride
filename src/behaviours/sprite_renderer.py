@@ -15,6 +15,7 @@ class SpriteRenderer(Behaviour):
         self.sprite = None
         self.surf = pygame.Surface((self.width, self.height))
 
+    # will be kind of funky with animations
     def resize(self, dimensions):
         self.width = dimensions[0]
         self.height = dimensions[1]
@@ -33,6 +34,7 @@ class SpriteRenderer(Behaviour):
         if self.center:
             offsetX = self.width / 2
             offsetY = self.height / 2
+            
         #screen.blit(self.surf,(t.position.x - offsetX, t.position.y - offsetY), self.colour)
 
         if self.sprite != None:
