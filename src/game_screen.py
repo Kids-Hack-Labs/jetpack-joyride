@@ -36,8 +36,11 @@ class GameScreen(Screen):
 
         animator = Animator()
 
-        run_animation = Animation("./assets/running/")
-        animator.animations.append(run_animation)
+        # needs to be replaced by actual animations
+        fall_animation = Animation("./assets/falling/")
+        fly_animation = Animation("./assets/flying/")
+        animator.animations.append(fall_animation)
+        animator.animations.append(fly_animation)
 
         player.add_behaviour(animator)
 
