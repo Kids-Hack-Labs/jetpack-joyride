@@ -32,4 +32,4 @@ class SpriteRenderer(Behaviour):
         if self.center:
             offsetX = self.width / 2
             offsetY = self.height / 2
-        screen.blit(self.surf,(t.position.x - offsetX, t.position.y - offsetY), self.colour)
+        screen.blit(self.surf,(t.position.x - offsetX, t.position.y - offsetY))
