@@ -5,7 +5,7 @@
 '''
 import sys, pygame
 #Frame rate spec
-_FPS = 30
+_FPS = 60
 
 #Other imports go here
 from src.game_screen import GameScreen
